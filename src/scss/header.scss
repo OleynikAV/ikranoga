@@ -1,0 +1,125 @@
+@import 'style';
+.burger__menu{
+  display: none;
+}
+header{
+  height: 100%;
+  background-image: url("./../images/bg_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.--padding-nav{
+  padding-top: 60px;
+}
+.--bg__header-dog{
+  position: relative;
+  height: 100%;
+  &:after{
+    content: "";
+    width: 658px;
+    height: 728px;
+    background-image: url("./../images/test2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.logo__link{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.logo__title{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 32px;
+  color: #f1cdb3;
+  margin: 0;
+}
+.logo__text{
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #ffffff;
+
+}
+.nav__menu{
+  width: 100%;
+
+}
+.nav__ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__li{
+  display: inline-block;
+  list-style: none;
+  margin-top: 25px;
+  border-bottom: 2px solid transparent;
+  &:hover{
+    border-color: #f1cdb3;
+  }
+}
+.nav__a{
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.description__header{
+  padding: 0;
+  padding-top: 200px;
+}
+.description__title{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
+}
+.description__text{
+  font-family: Arial;
+  font-width: 400;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 42px;
+}
+.description__button{
+  border: none;
+  margin-top: 45px;
+  display: inline-block;
+  &:hover{
+    text-decoration: none;
+    color: #000000;
+  }
+}
+.--button{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #f1cdb3;
+  transition: 0.3s ease;
+  &:hover{
+    transition: 0.3s ease;
+    background-color: #efbf9d;
+  }
+  &:active{
+    transition: 0.3s ease;
+    padding: 22px 42px;
+  }
+  &:focus{
+    transition: 0.3s ease;
+  }
+}

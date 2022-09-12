@@ -1,0 +1,379 @@
+.bg__about{
+  background-color: #fafafa;
+  padding-bottom: 90px;
+  padding-top: 90px;
+
+}
+.about__images{
+  text-align: center;
+}
+.about__pic{
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+.about__description{
+  margin-top: 30px;
+}
+.about__description-container{
+  justify-content: space-between;
+  span{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1D0F0F;
+  }
+  .about__description-title__protein {
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/protein.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+  }
+  .about__description-title__calcium {
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/calcium.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+  }
+  .about__description-title__phosphorus {
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/phosphorus.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+  }
+  .about__description-title__acids {
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/acids.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+  }
+  .about__description-title__vitamins {
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/vitamins.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+  }
+}
+.about__title{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+}
+.about__title-two{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 18px;
+  color: #545454;
+  text-align: center;
+}
+.about__text{
+  li{
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 15px;
+    color: #7B7C81;
+    list-style: none;
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/check-mark.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+  }
+}
+.bg__friends{
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.slider{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.slider__item{
+  text-align: center;
+  max-width: 350px;
+  height: 400px;
+  background-color: #fafafa;
+  border-radius: 9px;
+  &:hover{
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+.slider-item__link{
+  font-family: Georgia;
+  text-decoration: none;
+  color: #292929;
+  font-size: 14px;
+  padding: 9px 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 215px;
+  height: 40px;
+  background-color: #fafafa;
+  border: 2px solid #f1cdb3;
+  &:hover{
+    background-color: #efbf9d;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.slider-item__images{
+  margin: 0 auto;
+}
+.slider-item__name{
+  font-family: Georgia, serif;
+  color: #545454;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+}
+.slider-item__description{
+  color: black;
+  display: none;
+  li{
+    font-family: Georgia, serif;
+    color: #545454;
+    list-style: none;
+    text-align: left;
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("./../images/cheked-mark.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+  }
+}
+.slick-track{
+  display: flex;
+  justify-content: space-between;
+}
+.slick-arrow{
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background: #f6f6f6;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  &:hover{
+    background-color: #f1cdb3;
+  }
+}
+.slick-next{
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  &:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("./../images/right-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 13px;
+    top: 20px;
+  }
+}
+.slick-prev{
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  &:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("./../images/left-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+  }
+}
+.friends__link{
+  text-decoration: none;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 14px;
+  color: #292929;
+  padding: 9px 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #f1cdb3;
+  display: block;
+  margin: 0 auto;
+  background-color: #f1cdb3;
+  &:hover{
+    background-color: #efbf9d;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.title__slider{
+  margin: 0;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  text-align: center;
+}
+.bg__help{
+  background-color: #fafafa;
+  padding-top: 75px;
+  padding-bottom: 85px;
+}
+.help__title{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  text-align: center;
+}
+.help__item{
+  max-width: 33.3%;
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+.help-item__images{
+  max-width: 45px;
+  width: 100%;
+  max-height: 57px;
+  height: 100vh;
+  object-fit: contain;
+}
+.help-item__text{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+}
+.help-item-text__description{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 14px;
+  color: #545454;
+  text-align: left;
+}
+.donation_bg{
+  background-color: #f6f6f6;
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+.donation__pic{
+  max-width: 505px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
+  object-fit: contain;
+
+}
+.donation__description{
+}
+.donation__title{
+  margin: 0;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+}
+.donation__card-title{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 15px;
+  color: #545454;
+}
+.donation__card{
+  font-family: "Times New Roman";
+  font-weight: normal;
+  font-size: 20px;
+  color: #292929;
+  width: fit-content;
+  padding: 15px;
+  background-color: #f1cdb3;
+  border-radius: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-left: 50px;
+  &:before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("./../images/creditcard.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 30px;
+    top: 140px;
+  }
+}
+.donation__card-text{
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  color: #b2b2b2;
+}
