@@ -48,7 +48,7 @@
         <div class="description__header  col-xl-5">
             <h2 class="description__title">Не только на праздники - <br> она нужна!</h2>
             <p class="description__text">Икра-источник протеина, и всем известный витамин!</p>
-            <a class="description__button --button" href="#">Заказать</a>
+            <a class="description__button --button order">Заказать</a>
         </div>
     </div>
 
@@ -157,7 +157,7 @@
                         <button class="slider-item__link" href="#">Показать поднобности</button>
                     </article>
                 </div>
-                <a class="friends__link" href="#">Заказать</a>
+                <a class="friends__link order">Заказать</a>
             </div>
         </div>
     </section>
@@ -267,11 +267,33 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Название</h3>
+                    <h3 class="modal-title">Заказать</h3>
                     <a href="#close" title="Close" class="close">×</a>
                 </div>
                 <div class="modal-body">
-                    <p>Содержимое модального окна...</p>
+                    <form action="" id="ajax_form" method="post">
+                        <ul>
+                           <li>
+                               <input type="text" name="name" placeholder="Ваше имя :">
+                           </li>
+                            <li>
+                                <input type="text" name="phone" placeholder="Ваш номер телефона: +38">
+                            </li>
+                            <li>
+                                <input type="text" name="city" placeholder="Город доставки">
+                            </li>
+                            <li>
+                                <input type="text" name="department" placeholder="Отделение НП:">
+                            </li>
+                            <li>
+                                <input type="number" name="size" placeholder="Количество:">
+                            </li>
+                            <li>
+                                <button type="submit" id="submit">Подвердить</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <div id="result_form"></div>
                 </div>
             </div>
         </div>
