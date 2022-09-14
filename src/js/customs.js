@@ -30,7 +30,7 @@ $('.close__menu,.nav__li-mobile').on('click', function (){
 $('.slider-item__link').on('click', function (){
     $('.slider-item__description').toggle( "slow", function() {
        if ( $('.slider-item__description').css('display') == "none") {
-           $('.slider__item').css({height: "400px", transition: 'height 1s'})
+           $('.slider__item').css({height: "420px", transition: 'height 1s'})
            $('.slider-item__link').text('Показать поднобности')
        } else {
            $('.slider-item__link').text('Скрыть подробности')
