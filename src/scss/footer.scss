@@ -1,6 +1,6 @@
 footer{
   height: 360px;
-  background-image: url("./../images/bg_footer.png");
+  background-image: url("./../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
@@ -10,19 +10,7 @@ footer{
 address{
   position: relative;
 }
-.bg_dog{
-  &:after{
-    content: "";
-    width: 300px;
-    height: 300px;
-    background-image: url("./../images/test.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 0;
-    top: -20px;
-  }
-}
+
 .address__title{
   font-family: Georgia;
   font-weight: 400;

@@ -1,4 +1,6 @@
-
+.modal-window{
+  display: none;
+}
 .modal {
   position: fixed; /* фиксированное положение */
   top: 0;
@@ -10,14 +12,10 @@
   opacity: 0 ;/* по умолчанию модальное окно прозрачно */
   -webkit-transition: opacity 800ms ease-in;
   -moz-transition: opacity 800ms ease-in;
-  /*transition: opacity 200ms ease-in; !* анимация перехода *!*/
   pointer-events: none; /* элемент невидим для событий мыши */
   margin: 0;
   padding: 0;
   display: block;
-
-  /*opacity: 1;
-  display: block;*/
 }
 /* при отображении модального окно */
 .modal:target {

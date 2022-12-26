@@ -1,31 +1,39 @@
-.bg__about{
+.bg__about {
   background-color: #fafafa;
   padding-bottom: 90px;
   padding-top: 90px;
 
 }
-.about__images{
-  text-align: center;
+
+.about__images {
+  max-width: 475px;
+  max-height: 360px;
 }
-.about__pic{
-  max-width: 300px;
+
+.about__pic {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
-.about__description{
+
+.about__description {
   margin-top: 30px;
 }
-.about__description-container{
-  justify-content: space-between;
-  span{
+
+.about__description-container {
+  justify-content: space-evenly;
+
+  span {
     font-family: Arial;
     font-weight: bold;
     font-size: 15px;
     color: #1D0F0F;
   }
+
   .about__description-title__protein {
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -38,9 +46,11 @@
     }
 
   }
+
   .about__description-title__calcium {
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -53,9 +63,11 @@
     }
 
   }
+
   .about__description-title__phosphorus {
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -68,9 +80,11 @@
     }
 
   }
+
   .about__description-title__acids {
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -83,9 +97,11 @@
     }
 
   }
+
   .about__description-title__vitamins {
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -99,28 +115,32 @@
 
   }
 }
-.about__title{
+
+.about__title {
   font-family: Georgia;
   font-weight: 400;
   font-size: 35px;
   color: #545454;
 }
-.about__title-two{
+
+.about__title-two {
   font-family: Georgia;
   font-weight: bold;
   font-size: 18px;
   color: #545454;
   text-align: center;
 }
-.about__text{
-  li{
+
+.about__text {
+  li {
     font-family: 'Arial';
     font-weight: 400;
     font-size: 18px;
     color: #7B7C81;
     list-style: none;
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -133,26 +153,31 @@
     }
   }
 }
-.bg__friends{
+
+.bg__friends {
   background-color: #f6f6f6;
   padding-top: 80px;
   padding-bottom: 70px;
 }
-.slider{
+
+.slider {
   margin-top: 80px;
   margin-bottom: 40px;
 }
-.slider__item{
+
+.slider__item {
   text-align: center;
-  max-width: 350px;
+  max-width: 370px;
   height: 420px;
   background-color: #fafafa;
   border-radius: 9px;
-  &:hover{
+
+  &:hover {
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
   }
 }
-.slider-item__link{
+
+.slider-item__link {
   font-family: Georgia;
   text-decoration: none;
   color: #292929;
@@ -164,16 +189,21 @@
   height: 40px;
   background-color: #fafafa;
   border: 2px solid #f1cdb3;
-  &:hover{
+
+  &:hover {
     background-color: #efbf9d;
     text-decoration: none;
     color: inherit;
   }
 }
-.slider-item__images{
+
+.slider-item__images {
   margin: 0 auto;
+  width: 100%;
+  height: 250px;
 }
-.slider-item__name{
+
+.slider-item__name {
   font-family: Georgia, serif;
   font-weight: bold;
   color: #545454;
@@ -182,16 +212,19 @@
   margin-top: 40px;
 
 }
-.slider-item__description{
+
+.slider-item__description {
   color: black;
   display: none;
-  li{
+
+  li {
     font-family: Georgia, serif;
     color: #545454;
     list-style: none;
     text-align: left;
     position: relative;
-    &:before{
+
+    &:before {
       content: "";
       width: 20px;
       height: 20px;
@@ -204,26 +237,31 @@
     }
   }
 }
-.slick-track{
+
+.slick-track {
   display: flex;
   justify-content: space-between;
 }
-.slick-arrow{
+
+.slick-arrow {
   font-size: 0;
   width: 50px;
   height: 50px;
   background: #f6f6f6;
   border: 2px solid #f1cdb3;
   border-radius: 50%;
-  &:hover{
+
+  &:hover {
     background-color: #f1cdb3;
   }
 }
-.slick-next{
+
+.slick-next {
   position: absolute;
   right: -50px;
   top: 50%;
-  &:after{
+
+  &:after {
     content: "";
     width: 20px;
     height: 20px;
@@ -235,11 +273,13 @@
     top: 20px;
   }
 }
-.slick-prev{
+
+.slick-prev {
   position: absolute;
   left: -50px;
   top: 50%;
-  &:before{
+
+  &:before {
     content: "";
     width: 20px;
     height: 20px;
@@ -251,7 +291,8 @@
     left: 15px;
   }
 }
-.friends__link{
+
+.friends__link {
   text-decoration: none;
   font-family: Georgia;
   font-weight: 400;
@@ -266,13 +307,15 @@
   display: block;
   margin: 0 auto;
   background-color: #f1cdb3;
-  &:hover{
+
+  &:hover {
     background-color: #efbf9d;
     text-decoration: none;
     color: inherit;
   }
 }
-.title__slider{
+
+.title__slider {
   margin: 0;
   font-family: Georgia;
   font-weight: 400;
@@ -280,51 +323,59 @@
   color: #545454;
   text-align: center;
 }
-.bg__help{
+
+.bg__help {
   background-color: #fafafa;
   padding-top: 75px;
   padding-bottom: 85px;
 }
-.help__title{
+
+.help__title {
   font-family: Georgia;
   font-weight: 400;
   font-size: 35px;
   color: #545454;
   text-align: center;
 }
-.help__item{
+
+.help__item {
   max-width: 33.3%;
   width: 100%;
   text-align: center;
   margin-top: 70px;
   padding: 0 15px;
 }
-.help-item__images{
+
+.help-item__images {
   max-width: 45px;
   width: 100%;
   max-height: 57px;
   height: 100vh;
   object-fit: contain;
 }
-.help-item__text{
+
+.help-item__text {
   font-family: Georgia;
   font-weight: 400;
   font-size: 28px;
   color: #545454;
 }
-.help-item-text__description{
+
+.help-item-text__description {
   font-family: Georgia;
   font-weight: 400;
   font-size: 18px;
   color: #545454;
   text-align: left;
 }
-.donation_bg{
+
+.donation_bg {
   background-color: #f6f6f6;
   padding-top: 70px;
   padding-bottom: 90px;
 }
-.donation__pic{
+
+.donation__pic {
   max-width: 505px;
   width: 100%;
   max-height: 260px;
@@ -332,22 +383,26 @@
   object-fit: contain;
 
 }
-.donation__description{
+
+.donation__description {
 }
-.donation__title{
+
+.donation__title {
   margin: 0;
   font-family: Georgia;
   font-weight: 400;
   font-size: 35px;
   color: #545454;
 }
-.donation__card-title{
+
+.donation__card-title {
   font-family: Georgia;
   font-weight: 400;
   font-size: 15px;
   color: #545454;
 }
-.donation__card{
+
+.donation__card {
   font-family: "Times New Roman";
   font-weight: normal;
   font-size: 20px;
@@ -360,7 +415,8 @@
   align-content: center;
   justify-content: center;
   padding-left: 50px;
-  &:before{
+
+  &:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -372,7 +428,8 @@
     top: 140px;
   }
 }
-.donation__card-text{
+
+.donation__card-text {
   font-family: Arial;
   font-style: italic;
   font-weight: 400;

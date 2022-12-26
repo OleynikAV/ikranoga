@@ -38,12 +38,14 @@ $('.slider-item__link').on('click', function (){
        }
     });
 })
-$('.order').on('click', function (){
-    $('#openModal').css({opacity: 1}).show('slow')
+$('.order').on('click', function () {
+    $('.modal-window').css({display : 'block'});
+    $('#openModal').css({opacity: 1}).show('slow');
 })
 $('.close').on('click', function (){
-    $('#openModal').css({opacity: 0}).hide('slow')
-    $('#result_form').html('')
+    $('#openModal').css({opacity: 0}).hide('slow');
+    $('#result_form').html('');
+    $('.modal-window').css({display : 'none'});
 })
 function sendAjaxForm(result_form, ajax_form, url) {
     $.ajax({
